@@ -116,3 +116,5 @@ dmypy.json
 
 # VSCode设置文件夹
 .vscode/
+results/
+public/cities.json
