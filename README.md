@@ -7,17 +7,16 @@
 ## Features
 
 1. 使用 Scrapy 爬取城市简称(对！就是这么的大材小用！)
-
-## To do
-
-1. 爬取国内航线信息
-2. 国内航线可视化
+2. 分析携程网的Token生成，并直接使用Python运行JS代码生成Token(混淆代码看得头疼)
+3. 好吧，爬取失败，前面爬太快，就被盯上了
 
 ## Installation
 
 ```bash
 pip install Twisted-20.3.0-cp39-cp39-win_amd64.whl
 pip install Scrapy
+pip install PyExecJS
+pip install requests
 ```
 
 ## Usage
@@ -25,6 +24,9 @@ pip install Scrapy
 ```bash
 # 爬取城市简称
 cd CtripCities && python3 main.py
+
+# 爬取航线信息
+cd CtripAirlines && python3 main.py
 ```
 
 ## Maintainers
